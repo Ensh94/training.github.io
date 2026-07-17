@@ -20,7 +20,7 @@ class Recipe(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(200), nullable=False)
     meal_type = db.Column(db.String(100), nullable=False)  # Śniadanie, Drugie śniadanie, etc.
-    day = db.Column(db.String(20))  # Date in format DD.MM.YYYY
+    day = db.Column(db.String(100))  # Date with day name in Polish
     kcal = db.Column(db.String(50))
     time = db.Column(db.String(50))
     ingredients = db.Column(db.Text)  # JSON array as text
