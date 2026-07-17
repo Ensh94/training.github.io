@@ -58,7 +58,9 @@ import json
 
 # Connect to LOCAL database
 print("\n1. Connecting to local database...")
-local_engine = create_engine('sqlite:///instance/shopping_app.db')
+local_db_path = os.path.join(os.path.dirname(__file__), 'instance', 'shopping_app.db')
+print(f"   Local DB path: {local_db_path}")
+local_engine = create_engine(f'sqlite:///{local_db_path}')
 LocalSession = sessionmaker(bind=local_engine)
 local_session = LocalSession()
 
@@ -68,17 +70,24 @@ prod_engine = create_engine(production_db_url)
 ProdSession = sessionmaker(bind=prod_engine)
 prod_session = ProdSession()
 
-# Create tables in production if they don't exist
+# Print source counts so we can verify migration input before copying
+print("3. Verifying source (local) row counts...")
+print(f"   → Recipes: {local_session.query(Recipe).count()}")
+print(f"   → Meal profiles: {local_session.query(MealProfile).count()}")
+print(f"   → Gym users: {local_session.query(GymUser).count()}")
+print(f"   → Workout profiles: {local_session.query(WorkoutProfile).count()}")
+print(f"   → Exercises: {local_session.query(Exercise).count()}")
+print(f"   → Workouts: {local_session.query(Workout).count()}")
+print(f"   → Backups: {local_session.query(ShoppingBackup).count()}")
+print(f"   → Feedback: {local_session.query(Feedback).count()}")
+
+# Recreate schema in production only
 print("3. Creating tables in production database...")
-from app import app
-app.config['SQLALCHEMY_DATABASE_URI'] = production_db_url
-with app.app_context():
-    # Drop all tables first to ensure schema matches
-    print("   → Dropping existing tables (if any)...")
-    db.drop_all()
-    print("   → Creating fresh tables with correct schema...")
-    db.create_all()
-    print("   ✓ Tables created successfully")
+print("   → Dropping existing tables (if any) on PRODUCTION...")
+db.Model.metadata.drop_all(bind=prod_engine)
+print("   → Creating fresh tables with correct schema on PRODUCTION...")
+db.Model.metadata.create_all(bind=prod_engine)
+print("   ✓ Tables created successfully")
 
 def copy_table(model, name):
     """Copy data from local to production for a given model"""
@@ -93,6 +102,48 @@ def copy_table(model, name):
     for item in local_items:
         # Create a dictionary of all columns
         item_dict = {c.name: getattr(item, c.name) for c in item.__table__.columns}
+
+        # Legacy data fix: some workouts point to profile names instead of profile IDs.
+        if model is Workout:
+            profile_id = item_dict.get('profile_id')
+            workout_profile_id = item_dict.get('workout_profile_id')
+            user_profile = item_dict.get('user_profile') or 'Gość'
+
+            # 1) If profile_id does not exist, try workout_profile_id as canonical profile reference.
+            if profile_id:
+                profile_exists = prod_session.query(WorkoutProfile).filter_by(id=profile_id).first()
+            else:
+                profile_exists = None
+
+            if not profile_exists and workout_profile_id:
+                alt_profile = prod_session.query(WorkoutProfile).filter_by(id=workout_profile_id).first()
+                if alt_profile:
+                    item_dict['profile_id'] = workout_profile_id
+                    profile_exists = alt_profile
+
+            # 2) If still missing, create a placeholder profile so FK remains valid.
+            if not profile_exists:
+                placeholder_profile_id = item_dict.get('profile_id') or workout_profile_id or f"legacy_{item_dict.get('id')}"
+
+                # Ensure owner user exists.
+                owner = prod_session.query(GymUser).filter_by(username=user_profile).first()
+                if not owner:
+                    owner = GymUser(username=user_profile)
+                    prod_session.add(owner)
+                    prod_session.flush()
+
+                existing_placeholder = prod_session.query(WorkoutProfile).filter_by(id=placeholder_profile_id).first()
+                if not existing_placeholder:
+                    existing_placeholder = WorkoutProfile(
+                        id=placeholder_profile_id,
+                        user_id=owner.id,
+                        name=f"Legacy {placeholder_profile_id}",
+                        icon='🏋️'
+                    )
+                    prod_session.add(existing_placeholder)
+                    prod_session.flush()
+
+                item_dict['profile_id'] = placeholder_profile_id
         
         # Check if item already exists in production (by primary key)
         pk_cols = [c.name for c in item.__table__.primary_key.columns]
