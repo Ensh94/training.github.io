@@ -1,0 +1,29 @@
+{
+  "profiles": [
+    {
+      "id": "1767102893.742724",
+      "name": "test",
+      "icon": "🏋️",
+      "exercises": [
+        {
+          "id": "1767103736.567613",
+          "name": "Smarowanie cheba masłem",
+          "info": "Kromka chleba płasko na blacie, ruchy nożem z masłem w poziomie",
+          "recommended_sets": 3,
+          "recommended_reps": 6,
+          "parameters": [
+            "reps",
+            "sets"
+          ],
+          "results": []
+        }
+      ]
+    },
+    {
+      "id": "1767103196.2633803",
+      "name": "test2",
+      "icon": "cycki",
+      "exercises": []
+    }
+  ]
+}

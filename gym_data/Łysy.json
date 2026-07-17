@@ -1,0 +1,248 @@
+{
+  "profiles": [
+    {
+      "id": "1767087136.449321",
+      "name": "Push",
+      "exercises": [
+        {
+          "id": "1767090473.016862",
+          "name": "Wypychanie na suwnicy",
+          "info": "",
+          "recommended_sets": 4,
+          "recommended_reps": 10,
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": []
+        },
+        {
+          "id": "1767087352.890328",
+          "name": "Wyciskanie sztangi leżąc",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "info": "",
+          "recommended_sets": 4,
+          "recommended_reps": 10
+        },
+        {
+          "id": "1767087518.642041",
+          "name": "Wyciskanie hantli lawka skos gorny",
+          "info": "skos gorny 2 wyzej niz poziom",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 4,
+          "recommended_reps": 10
+        },
+        {
+          "id": "1767087568.007979",
+          "name": "Wyciskanie hantli na głowę",
+          "info": "siedząc na ławce, oparcie 2 stopnie niżej niż pion",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 4,
+          "recommended_reps": 10
+        },
+        {
+          "id": "1767087617.24961",
+          "name": "Wyciskanie Hantli zza głowy oburącz",
+          "info": "na siedząco (bez oparcia)",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 4,
+          "recommended_reps": 10
+        }
+      ]
+    },
+    {
+      "id": "1767088165.848273",
+      "name": "Pull",
+      "exercises": [
+        {
+          "id": "1767089532.540753",
+          "name": "Block pull (martwy)",
+          "info": "",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 8
+        },
+        {
+          "id": "1767089549.968453",
+          "name": "Wiosłowanie sztangą",
+          "info": "",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 4,
+          "recommended_reps": 10
+        },
+        {
+          "id": "1767089571.855171",
+          "name": "Przyciąganie pionowe na maszynie",
+          "info": "sciagnij lopatki, szybko w dol, 3s do gory",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 4,
+          "recommended_reps": 12
+        },
+        {
+          "id": "1767089580.424176",
+          "name": "Y raise",
+          "info": "",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 10
+        },
+        {
+          "id": "1767089600.046336",
+          "name": "Rotacja zewnętrzna hantlem",
+          "info": "na ławce w klęku",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 10
+        }
+      ]
+    },
+    {
+      "id": "1767088171.854988",
+      "name": "Legs",
+      "exercises": [
+        {
+          "id": "1767089638.806208",
+          "name": "Box squat",
+          "info": "wydech przy wypychaniu",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 10
+        },
+        {
+          "id": "1767089668.573038",
+          "name": "Przysiad wykroczny",
+          "info": "",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 8
+        },
+        {
+          "id": "1767089695.141973",
+          "name": "Przysiad na jednej nodze do skrzyni",
+          "info": "",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 2,
+          "recommended_reps": 999
+        },
+        {
+          "id": "1767089711.441103",
+          "name": "Mostki biodrowe z nogami na skrzyni",
+          "info": "",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 12
+        },
+        {
+          "id": "1767089729.458035",
+          "name": "Brzuchy z guma",
+          "info": "guma w polowie lydek",
+          "parameters": [
+            "weight",
+            "reps",
+            "sets"
+          ],
+          "results": [],
+          "recommended_sets": 3,
+          "recommended_reps": 15
+        }
+      ]
+    },
+    {
+      "id": "1767090276.75017",
+      "name": "Kardio",
+      "exercises": [
+        {
+          "id": "1767090313.44818",
+          "name": "Szybki marsz",
+          "info": "",
+          "recommended_sets": null,
+          "recommended_reps": null,
+          "parameters": [
+            "distance",
+            "time"
+          ],
+          "results": []
+        },
+        {
+          "id": "1767091425.258202",
+          "name": "Rowerek",
+          "info": "",
+          "recommended_sets": null,
+          "recommended_reps": null,
+          "parameters": [
+            "distance",
+            "time"
+          ],
+          "results": []
+        }
+      ],
+      "icon": "🚴"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "profile_id": "1767087136.449321",
+    "profile_name": "Push",
+    "start_time": "2025-12-30T11:17:06.247Z",
+    "exercises": [
+      {
+        "id": "1767090473.016862",
+        "info": "",
+        "name": "Wypychanie na suwnicy",
+        "parameters": [
+          "weight",
+          "reps",
+          "sets"
+        ],
+        "recommended_reps": 10,
+        "recommended_sets": 4,
+        "results": [],
+        "sets": [
+          {
+            "weight": 5,
+            "reps": 5
+          },
+          {
+            "weight": 5,
+            "reps": 5
+          },
+          {
+            "weight": 5,
+            "reps": 5
+          }
+        ]
+      },
+      {
+        "id": "1767087352.890328",
+        "info": "",
+        "name": "Wyciskanie sztangi leżąc",
+        "parameters": [
+          "weight",
+          "reps",
+          "sets"
+        ],
+        "recommended_reps": 10,
+        "recommended_sets": 4,
+        "results": [],
+        "sets": [
+          {
+            "weight": 5,
+            "reps": 5
+          },
+          {
+            "weight": 5,
+            "reps": 5
+          },
+          {
+            "weight": 5,
+            "reps": 5
+          }
+        ]
+      },
+      {
+        "id": "1767087518.642041",
+        "info": "skos gorny 2 wyzej niz poziom",
+        "name": "Wyciskanie hantli lawka skos gorny",
+        "parameters": [
+          "weight",
+          "reps",
+          "sets"
+        ],
+        "recommended_reps": 10,
+        "recommended_sets": 4,
+        "results": [],
+        "sets": [
+          {
+            "weight": 2,
+            "reps": 2
+          }
+        ]
+      },
+      {
+        "id": "1767087568.007979",
+        "info": "siedząc na ławce, oparcie 2 stopnie niżej niż pion",
+        "name": "Wyciskanie hantli na głowę",
+        "parameters": [
+          "weight",
+          "reps",
+          "sets"
+        ],
+        "recommended_reps": 10,
+        "recommended_sets": 4,
+        "results": [],
+        "sets": [
+          {
+            "weight": 0,
+            "reps": 0
+          }
+        ]
+      },
+      {
+        "id": "1767087617.24961",
+        "info": "na siedząco (bez oparcia)",
+        "name": "Wyciskanie Hantli zza głowy oburącz",
+        "parameters": [
+          "weight",
+          "reps",
+          "sets"
+        ],
+        "recommended_reps": 10,
+        "recommended_sets": 4,
+        "results": [],
+        "sets": [
+          {
+            "weight": 2,
+            "reps": 2
+          }
+        ]
+      }
+    ],
+    "end_time": "2025-12-30T11:17:37.347Z",
+    "id": "1767093457.65839",
+    "username": "Łysy"
+  }
+]

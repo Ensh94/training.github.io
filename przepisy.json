@@ -1,0 +1,917 @@
+[
+  {
+    "day": "Wtorek 30.12.2025",
+    "meal_type": "Śniadanie",
+    "name": "Owsianka straciatella",
+    "kcal": "896",
+    "time": "5 min",
+    "ingredients": [
+      "siemię lniane 1/2 łyżki (5 g)",
+      "banan 1 1/2 sztuki (180 g)",
+      "borówki amerykańskie 3 garście (150 g)",
+      "czekolada gorzka 8 kostek (40 g)",
+      "jogurt naturalny 10 łyżek (200 g)",
+      "płatki owsiane 7 łyżek (70 g)"
+    ],
+    "instructions": "Banan obierz i pokrój w plasterki. Czekoladę posiekaj. Płatki zalej wrzątkiem, zostaw na kilka minut. Następnie dodaj jogurt naturalny, plasterki banana i posiekaną czekoladę. Wymieszaj i posyp siemieniem lnianym, dodaj borówki."
+  },
+  {
+    "day": "Wtorek 30.12.2025",
+    "meal_type": "Drugie śniadanie",
+    "name": "Sałatka z serkiem wiejskim i pestkami dyni",
+    "kcal": "298",
+    "time": "15 min",
+    "ingredients": [
+      "roszponka 1 garść (25 g)",
+      "pomidor 1 1/2 sztuki (250 g)",
+      "dynia, pestki 1 łyżka (10 g)",
+      "serek wiejski 8 łyżek (160 g)",
+      "ogórek kiszony 1 sztuka (70 g)",
+      "papryka czerwona 1/3 sztuki (100 g)"
+    ],
+    "instructions": "Pomidory, ogórka i paprykę pokrój. Wymieszaj z odsączonym serkiem wiejskim. Dodaj roszponkę, pestki dyni. Wymieszaj."
+  },
+  {
+    "day": "Wtorek 30.12.2025",
+    "meal_type": "Obiad",
+    "name": "Zielone curry z tofu",
+    "kcal": "922",
+    "time": "30 min",
+    "ingredients": [
+      "oliwa z oliwek 2 łyżki (20 ml)",
+      "czosnek 2 ząbki (10 g)",
+      "groszek zielony, mrożony 6 2/3 łyżki (100 g)",
+      "sok z limonki 3 1/3 łyżki (20 ml)",
+      "mleczko kokosowe 6 łyżek (60 ml)",
+      "nasiona słonecznika 1 łyżka (10 g)",
+      "szparagi 4 sztuki (120 g)",
+      "papryka chili, w proszku do smaku (5 g)",
+      "ryż brązowy, suchy 2/3 szklanki (100 g)",
+      "kolendra, nasiona do smaku (5 g)",
+      "tofu 4 plastry (90 g)",
+      "imbir, korzeń 1 kawałek (10 g)",
+      "cebula 1 sztuka (100 g)",
+      "curry, w proszku do smaku (5 g)"
+    ],
+    "instructions": "Ugotuj ryż zgodnie z opisem na opakowaniu. Zamarynuj tofu w czosnku, chilli, startym imbirze, soku z limonki. Cebulę posiekaj w kostkę, a od szparagów odetnij zdrewniałe końce i pokrój na mniejsze kawałki. Na patelni rozgrzej oliwę. Podsmaż cebulę i szparagi, dodaj zielony groszek i tofu. Dodaj przyprawy curry, mleczko kokosowe i duś na małym ogniu przez około 8-10 minut. Dodaj trochę wody i zagotuj sos. Wrzuć ryż do sosu, poczekaj aż wchłonie on cały płyn. Podawaj w miseczce. Gotowe danie posyp nasionami słonecznika. Dodatkiem może być posiekana świeża kolendra."
+  },
+  {
+    "day": "Wtorek 30.12.2025",
+    "meal_type": "Podwieczorek",
+    "name": "Deser kokosowy z ricottą i mango",
+    "kcal": "602",
+    "time": "10 min",
+    "ingredients": [
+      "migdały w płatkach 1 1/2 łyżki (15 g)",
+      "miód 1 łyżka (24 g)",
+      "ser ricotta 17 łyżeczek (170 g)",
+      "mango 1/2 sztuki (150 g)",
+      "mleczko kokosowe 8 łyżek (80 ml)"
+    ],
+    "instructions": "Serek ricotta zblenduj z miodem oraz mleczkiem kokosowym na jednolitą masę. Dodaj kawałki mango. Posyp płatkami migdałów."
+  },
+  {
+    "day": "Wtorek 30.12.2025",
+    "meal_type": "Kolacja",
+    "name": "Kanapki z pastą warzywną z szynką parmeńską i papryką",
+    "kcal": "679",
+    "time": "10 min",
+    "ingredients": [
+      "chleb żytni 4 średnie kromki (120 g)",
+      "szynka parmeńska 4 plastry (60 g)",
+      "pasta warzywna z ciecierzycą 6 łyżek (120 g)",
+      "papryka czerwona 1/2 sztuki (120 g)"
+    ],
+    "instructions": "Kanapki posmaruj pastą warzywną, dodaj plastry szynki parmeńskiej oraz kawałki papryki."
+  },
+  {
+    "day": "Środa 31.12.2025",
+    "meal_type": "Śniadanie",
+    "name": "Owsianka straciatella",
+    "kcal": "896",
+    "time": "5 min",
+    "ingredients": [
+      "siemię lniane 1/2 łyżki (5 g)",
+      "banan 1 1/2 sztuki (180 g)",
+      "borówki amerykańskie 3 garście (150 g)",
+      "czekolada gorzka 8 kostek (40 g)",
+      "jogurt naturalny 10 łyżek (200 g)",
+      "płatki owsiane 7 łyżek (70 g)"
+    ],
+    "instructions": "Banan obierz i pokrój w plasterki. Czekoladę posiekaj. Płatki zalej wrzątkiem, zostaw na kilka minut. Następnie dodaj jogurt naturalny, plasterki banana i posiekaną czekoladę. Wymieszaj i posyp siemieniem lnianym, dodaj borówki."
+  },
+  {
+    "day": "Środa 31.12.2025",
+    "meal_type": "Drugie śniadanie",
+    "name": "Sałatka z serkiem wiejskim i pestkami dyni",
+    "kcal": "298",
+    "time": "15 min",
+    "ingredients": [
+      "roszponka 1 garść (25 g)",
+      "pomidor 1 1/2 sztuki (250 g)",
+      "dynia, pestki 1 łyżka (10 g)",
+      "serek wiejski 8 łyżek (160 g)",
+      "ogórek kiszony 1 sztuka (70 g)",
+      "papryka czerwona 1/3 sztuki (100 g)"
+    ],
+    "instructions": "Pomidory, ogórka i paprykę pokrój. Wymieszaj z odsączonym serkiem wiejskim. Dodaj roszponkę, pestki dyni. Wymieszaj."
+  },
+  {
+    "day": "Środa 31.12.2025",
+    "meal_type": "Obiad",
+    "name": "Zielone curry z tofu",
+    "kcal": "922",
+    "time": "30 min",
+    "ingredients": [
+      "oliwa z oliwek 2 łyżki (20 ml)",
+      "czosnek 2 ząbki (10 g)",
+      "groszek zielony, mrożony 6 2/3 łyżki (100 g)",
+      "sok z limonki 3 1/3 łyżki (20 ml)",
+      "mleczko kokosowe 6 łyżek (60 ml)",
+      "nasiona słonecznika 1 łyżka (10 g)",
+      "szparagi 4 sztuki (120 g)",
+      "papryka chili, w proszku do smaku (5 g)",
+      "ryż brązowy, suchy 2/3 szklanki (100 g)",
+      "kolendra, nasiona do smaku (5 g)",
+      "tofu 4 plastry (90 g)",
+      "imbir, korzeń 1 kawałek (10 g)",
+      "cebula 1 sztuka (100 g)",
+      "curry, w proszku do smaku (5 g)"
+    ],
+    "instructions": "Ugotuj ryż zgodnie z opisem na opakowaniu. Zamarynuj tofu w czosnku, chilli, startym imbirze, soku z limonki. Cebulę posiekaj w kostkę, a od szparagów odetnij zdrewniałe końce i pokrój na mniejsze kawałki. Na patelni rozgrzej oliwę. Podsmaż cebulę i szparagi, dodaj zielony groszek i tofu. Dodaj przyprawy curry, mleczko kokosowe i duś na małym ogniu przez około 8-10 minut. Dodaj trochę wody i zagotuj sos. Wrzuć ryż do sosu, poczekaj aż wchłonie on cały płyn. Podawaj w miseczce. Gotowe danie posyp nasionami słonecznika. Dodatkiem może być posiekana świeża kolendra."
+  },
+  {
+    "day": "Środa 31.12.2025",
+    "meal_type": "Podwieczorek",
+    "name": "Deser kokosowy z ricottą i mango",
+    "kcal": "602",
+    "time": "10 min",
+    "ingredients": [
+      "migdały w płatkach 1 1/2 łyżki (15 g)",
+      "miód 1 łyżka (24 g)",
+      "ser ricotta 17 łyżeczek (170 g)",
+      "mango 1/2 sztuki (150 g)",
+      "mleczko kokosowe 8 łyżek (80 ml)"
+    ],
+    "instructions": "Serek ricotta zblenduj z miodem oraz mleczkiem kokosowym na jednolitą masę. Dodaj kawałki mango. Posyp płatkami migdałów."
+  },
+  {
+    "day": "Środa 31.12.2025",
+    "meal_type": "Kolacja",
+    "name": "Kanapki z pastą warzywną z szynką parmeńską i papryką",
+    "kcal": "679",
+    "time": "10 min",
+    "ingredients": [
+      "chleb żytni 4 średnie kromki (120 g)",
+      "szynka parmeńska 4 plastry (60 g)",
+      "pasta warzywna z ciecierzycą 6 łyżek (120 g)",
+      "papryka czerwona 1/2 sztuki (120 g)"
+    ],
+    "instructions": "Kanapki posmaruj pastą warzywną, dodaj plastry szynki parmeńskiej oraz kawałki papryki."
+  },
+  {
+    "day": "Czwartek 01.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Awokado nadziewane łososiem",
+    "kcal": "901",
+    "time": "15 min",
+    "ingredients": [
+      "awokado 1 sztuka (140 g)",
+      "kapary 6 łyżek (60 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "łosoś wędzony 2 opakowania (300 g)",
+      "pomidor 1 sztuka (350 g)",
+      "wafle ryżowe 2 sztuki (20 g)"
+    ],
+    "instructions": "Awokado przekrój. Usuń pestkę. Wyjmij miąższ awokado używając łyżki uważając na skórkę aby jej nie zniszczyć. Awokado, łososia, pomidora pokrój i wymieszaj z kaparami. Dopraw do smaku i skrop sokiem z cytryny. Napełnij łupinki awokado. Podaj z waflami ryżowymi."
+  },
+  {
+    "day": "Czwartek 01.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Jabłkowe muffiny",
+    "kcal": "403",
+    "time": "40 min",
+    "ingredients": [
+      "jaja kurze 2 sztuki (100 g)",
+      "banan 3/4 sztuki (100 g)",
+      "jabłko 2/3 sztuki (125 g)",
+      "mąka jaglana 2 łyżki (20 g)",
+      "mąka kokosowa 1 łyżka (15 g)",
+      "cynamon, w proszku 1 łyżeczka (4 g)",
+      "soda oczyszczona 1/3 łyżeczki (2 g)"
+    ],
+    "instructions": "Jajka i banan zblenduj na gładką masę. Jabłko obierz i pokrój w drobną kosteczkę. W misce wymieszaj pokrojone jabłko, jajka z bananem oraz mąki, sodę i cynamon. Włóż ciasto do foremek i piecz około 30 minut w temperaturze 180 stopni."
+  },
+  {
+    "day": "Czwartek 01.01.2026",
+    "meal_type": "Obiad",
+    "name": "Razowy makaron z łososiem i brokułami",
+    "kcal": "951",
+    "time": "25 min",
+    "ingredients": [
+      "brokuły 1/3 sztuki (150 g)",
+      "czosnek 1/3 ząbka (2 g)",
+      "gałka muszkatołowa, w proszku 1 szczypta (1 g)",
+      "filet z łososia 1 1/4 sztuki (150 g)",
+      "makaron razowy świderki/penne, suchy 1 szklanka (60 g)",
+      "mleko 2% tłuszczu 1/5 szklanki (50 ml)",
+      "oliwa z oliwek 3 łyżki (30 ml)",
+      "serek śmietankowy naturalny 2 1/3 łyżki (60 g)",
+      "skórka cytryny do smaku (1 g)",
+      "szpinak świeży 2 garście (50 g)"
+    ],
+    "instructions": "Kawałek łososia polej oliwą, zawiń w folię aluminiową lub papier do pieczenia i piecz w piekarniku przez 20 minut w 180 stopniach. Szpinak podduś razem z posiekanym czosnkiem na łyżce oliwy. Serek połącz z mlekiem i gałką muszkatołową, dodaj podduszony szpinak, startą wcześniej skórkę z cytryny i brokuła. Makaron ugotuj we wrzącej wodzie. Wyjmij łososia z piekarnika. Makaron wyjmij na talerz polej sosem, dodaj kawałki upieczonego łososia i polej odrobiną soku z cytryny."
+  },
+  {
+    "day": "Czwartek 01.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Jogurt naturalny z kiwi i kawałami ananasa",
+    "kcal": "294",
+    "time": "5 min",
+    "ingredients": [
+      "ananas 2 plastry (80 g)",
+      "jogurt naturalny 7 1/2 łyżki (150 g)",
+      "migdały w płatkach 1 łyżeczka (5 g)",
+      "kiwi 1 sztuka (70 g)",
+      "daktyle, suszone 2 sztuki (14 g)"
+    ],
+    "instructions": "Do jogurtu dodaj kawałki ananasa i plastry kiwi, posyp płatkami migdałów oraz posiekanymi daktylami."
+  },
+  {
+    "day": "Czwartek 01.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Kabaczek zapiekany indykiem",
+    "kcal": "804",
+    "time": "40 min",
+    "ingredients": [
+      "czosnek 1 ząbek (5 g)",
+      "cebula 1 sztuka (100 g)",
+      "mięso mielone z piersi indyka 1/2 szklanki (100 g)",
+      "kabaczek 1/3 sztuki (200 g)",
+      "olej rzepakowy 1 łyżka (10 ml)",
+      "pieczarki 5 sztuk (100 g)",
+      "oregano, suszone do smaku (1 g)",
+      "papryka chili, w proszku do smaku (2 g)",
+      "pomidor 1 sztuka (200 g)",
+      "olej lniany 1 łyżka (10 ml)",
+      "kasza gryczana, niepalona sucha 1/3 szklanki (80 g)",
+      "ser mozzarella 2 1/2 plastra (50 g)"
+    ],
+    "instructions": "Przekrój kabaczek wzdłuż na pół. Wyjmij środek tak, aby zostały połówki, które będzie można wypełnić farszem. Posiekaj czosnek i cebulę, podsmaż je na oleju rzepakowym. Dodaj do nich posiekane pieczarki, środek kabaczka i razem duś. Zdejmij farsz z patelni i w jego miejsce połóż mięso, chwilę duś. Do mięsa dodaj wcześniej zdjęty farsz. Dodaj przyprawy i całość dokładnie wymieszaj. Tak przygotowany farsz włóż do wydrążonych połówek kabaczka i piecz w piekarniku w 200 stopniach przez 15-20 minut (do miękkości kabaczka). Przed końcem pieczenia posyp danie startą mozzarellą. Ugotuj kaszę według instrukcji na opakowaniu. Przygotuj surówkę - pomidora umyj i pokrój na kawałki. Skrop go olejem lnianym."
+  },
+  {
+    "day": "Piątek 02.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Awokado nadziewane łososiem",
+    "kcal": "901",
+    "time": "15 min",
+    "ingredients": [
+      "awokado 1 sztuka (140 g)",
+      "kapary 6 łyżek (60 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "łosoś wędzony 2 opakowania (300 g)",
+      "pomidor 1 sztuka (350 g)",
+      "wafle ryżowe 2 sztuki (20 g)"
+    ],
+    "instructions": "Awokado przekrój. Usuń pestkę. Wyjmij miąższ awokado używając łyżki uważając na skórkę aby jej nie zniszczyć. Awokado, łososia, pomidora pokrój i wymieszaj z kaparami. Dopraw do smaku i skrop sokiem z cytryny. Napełnij łupinki awokado. Podaj z waflami ryżowymi."
+  },
+  {
+    "day": "Piątek 02.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Jabłkowe muffiny",
+    "kcal": "403",
+    "time": "40 min",
+    "ingredients": [
+      "jaja kurze 2 sztuki (100 g)",
+      "banan 3/4 sztuki (100 g)",
+      "jabłko 2/3 sztuki (125 g)",
+      "mąka jaglana 2 łyżki (20 g)",
+      "mąka kokosowa 1 łyżka (15 g)",
+      "cynamon, w proszku 1 łyżeczka (4 g)",
+      "soda oczyszczona 1/3 łyżeczki (2 g)"
+    ],
+    "instructions": "Jajka i banan zblenduj na gładką masę. Jabłko obierz i pokrój w drobną kosteczkę. W misce wymieszaj pokrojone jabłko, jajka z bananem oraz mąki, sodę i cynamon. Włóż ciasto do foremek i piecz około 30 minut w temperaturze 180 stopni."
+  },
+  {
+    "day": "Piątek 02.01.2026",
+    "meal_type": "Obiad",
+    "name": "Razowy makaron z łososiem i brokułami",
+    "kcal": "951",
+    "time": "25 min",
+    "ingredients": [
+      "brokuły 1/3 sztuki (150 g)",
+      "czosnek 1/3 ząbka (2 g)",
+      "gałka muszkatołowa, w proszku 1 szczypta (1 g)",
+      "filet z łososia 1 1/4 sztuki (150 g)",
+      "makaron razowy świderki/penne, suchy 1 szklanka (60 g)",
+      "mleko 2% tłuszczu 1/5 szklanki (50 ml)",
+      "oliwa z oliwek 3 łyżki (30 ml)",
+      "serek śmietankowy naturalny 2 1/3 łyżki (60 g)",
+      "skórka cytryny do smaku (1 g)",
+      "szpinak świeży 2 garście (50 g)"
+    ],
+    "instructions": "Kawałek łososia polej oliwą, zawiń w folię aluminiową lub papier do pieczenia i piecz w piekarniku przez 20 minut w 180 stopniach. Szpinak podduś razem z posiekanym czosnkiem na łyżce oliwy. Serek połącz z mlekiem i gałką muszkatołową, dodaj podduszony szpinak, startą wcześniej skórkę z cytryny i brokuła. Makaron ugotuj we wrzącej wodzie. Wyjmij łososia z piekarnika. Makaron wyjmij na talerz polej sosem, dodaj kawałki upieczonego łososia i polej odrobiną soku z cytryny."
+  },
+  {
+    "day": "Piątek 02.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Jogurt naturalny z kiwi i kawałami ananasa",
+    "kcal": "294",
+    "time": "5 min",
+    "ingredients": [
+      "ananas 2 plastry (80 g)",
+      "jogurt naturalny 7 1/2 łyżki (150 g)",
+      "migdały w płatkach 1 łyżeczka (5 g)",
+      "kiwi 1 sztuka (70 g)",
+      "daktyle, suszone 2 sztuki (14 g)"
+    ],
+    "instructions": "Do jogurtu dodaj kawałki ananasa i plastry kiwi, posyp płatkami migdałów oraz posiekanymi daktylami."
+  },
+  {
+    "day": "Piątek 02.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Kabaczek zapiekany indykiem",
+    "kcal": "804",
+    "time": "40 min",
+    "ingredients": [
+      "czosnek 1 ząbek (5 g)",
+      "cebula 1 sztuka (100 g)",
+      "mięso mielone z piersi indyka 1/2 szklanki (100 g)",
+      "kabaczek 1/3 sztuki (200 g)",
+      "olej rzepakowy 1 łyżka (10 ml)",
+      "pieczarki 5 sztuk (100 g)",
+      "oregano, suszone do smaku (1 g)",
+      "papryka chili, w proszku do smaku (2 g)",
+      "pomidor 1 sztuka (200 g)",
+      "olej lniany 1 łyżka (10 ml)",
+      "kasza gryczana, niepalona sucha 1/3 szklanki (80 g)",
+      "ser mozzarella 2 1/2 plastra (50 g)"
+    ],
+    "instructions": "Przekrój kabaczek wzdłuż na pół. Wyjmij środek tak, aby zostały połówki, które będzie można wypełnić farszem. Posiekaj czosnek i cebulę, podsmaż je na oleju rzepakowym. Dodaj do nich posiekane pieczarki, środek kabaczka i razem duś. Zdejmij farsz z patelni i w jego miejsce połóż mięso, chwilę duś. Do mięsa dodaj wcześniej zdjęty farsz. Dodaj przyprawy i całość dokładnie wymieszaj. Tak przygotowany farsz włóż do wydrążonych połówek kabaczka i piecz w piekarniku w 200 stopniach przez 15-20 minut (do miękkości kabaczka). Przed końcem pieczenia posyp danie startą mozzarellą. Ugotuj kaszę według instrukcji na opakowaniu. Przygotuj surówkę - pomidora umyj i pokrój na kawałki. Skrop go olejem lnianym."
+  },
+  {
+    "day": "Sobota 03.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Świąteczna owsianka",
+    "kcal": "890",
+    "time": "15 min",
+    "ingredients": [
+      "płatki owsiane 7 łyżek (70 g)",
+      "mleko 2% tłuszczu 1 szklanka (250 ml)",
+      "orzechy włoskie 1 garść (30 g)",
+      "orzechy laskowe 1 garść (30 g)",
+      "żurawina 1 1/3 łyżeczki (20 g)",
+      "jabłko 3/4 sztuki (150 g)",
+      "pomarańcza, skórka 1/2 łyżeczki (5 g)",
+      "cynamon, w proszku 1 łyżeczka (2 g)"
+    ],
+    "instructions": "Do mleka wrzuć płatki owsiane. Gotuj kilka minut. Pod koniec gotowania dodaj orzechy i żurawinę. W tym czasie obierz jabłko ze skórki i podduś na patelni z cynamonem i skórką z pomarańczy. Owsiankę podawaj z jabłkiem."
+  },
+  {
+    "day": "Sobota 03.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Serek wiejski z papryką i pomidorkami koktajlowymi",
+    "kcal": "295",
+    "time": "5 min",
+    "ingredients": [
+      "serek wiejski 1 małe opakowanie (150 g)",
+      "pomidorki koktajlowe 7 sztuk (140 g)",
+      "nasiona słonecznika 1/2 łyżki (5 g)",
+      "papryka czerwona 1/3 sztuki (70 g)",
+      "chleb żytni 1 kromka (35 g)"
+    ],
+    "instructions": "Do serka wiejskiego dodaj kawałki papryki oraz pomidorki koktajlowe. Posyp nasionami słonecznika, przypraw ulubionymi przyprawami według uznania i wymieszaj. Zjedz z pieczywem."
+  },
+  {
+    "day": "Sobota 03.01.2026",
+    "meal_type": "Obiad",
+    "name": "Dorsz pod kołderką z cukinii",
+    "kcal": "1052",
+    "time": "40 min",
+    "ingredients": [
+      "czosnek 1 ząbek (5 g)",
+      "cukinia 1/2 sztuki (300 g)",
+      "pietruszka, natka 9 łyżeczek (40 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "dorsz świeży, filet bez skóry 3 porcje (300 g)",
+      "kasza jęczmienna perłowa, sucha 1/2 szklanki (90 g)",
+      "masło klarowane 1 1/2 łyżki (22 g)",
+      "migdały w płatkach 2 2/3 łyżki (40 g)"
+    ],
+    "instructions": "Rybę opłucz, osusz i skrop sokiem z cytryny. Cukinię zetrzyj na grubych oczkach, natkę posiekaj, czosnek wyciśnij. Cukinię wrzuć na rozgrzaną patelnię z masłem i podsmaż przez około 5 minut. Rybę ułóż w naczyniu żaroodpornym i połóż na wierzchu cukinię. Piecz przez około 25 minut w 180 stopniach. Podaj z kaszą i posyp płatkami migdałowymi."
+  },
+  {
+    "day": "Sobota 03.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Jogurt z nektarynką i kokosem",
+    "kcal": "314",
+    "time": "5 min",
+    "ingredients": [
+      "jogurt naturalny 1 duże opakowanie (200 g)",
+      "nektarynka 1 sztuka (110 g)",
+      "wiórki kokosowe 1 łyżka (6 g)",
+      "orzechy włoskie 1 czubata łyżka (15 g)"
+    ],
+    "instructions": "Do jogurtu dodaj wiórki kokosowe, wymieszaj. Następnie dodaj kawałki nektarynki, posyp orzechami włoskimi."
+  },
+  {
+    "day": "Sobota 03.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Pieczeń wieprzowa z płatkami owsianymi",
+    "kcal": "935",
+    "time": "50 min",
+    "ingredients": [
+      "ryż biały, suchy 1/2 szklanki (90 g)",
+      "groszek zielony, mrożony 5 łyżek (75 g)",
+      "roszponka 2 garście (50 g)",
+      "rukola 2 garście (50 g)",
+      "ogórek zielony 2/3 sztuki (100 g)",
+      "koperek, świeży lub suszony 2 łyżeczki (8 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "schab wieprzowy bez kości, surowy 1 porcja (120 g)",
+      "ciecierzyca, gotowana lub z puszki 3 1/2 łyżki (70 g)",
+      "pieprz czarny do smaku (1 g)",
+      "płatki owsiane 3 łyżki (30 g)",
+      "czosnek 1 ząbek (5 g)",
+      "papryka chili, w proszku do smaku (1 g)",
+      "bazylia, suszona do smaku (1 g)",
+      "olej rzepakowy 1 1/2 łyżki (15 ml)"
+    ],
+    "instructions": "Zmiksuj mięso, ciecierzycę, pieprz, chili, bazylię, płatki, czosnek na gładką masę. Wysmaruj brytfankę olejem i włóż do niej uzyskaną masę. Całość piecz w piekarniku przez ok. 20-25 minut w temperaturze 200 stopni. Ugotuj ryż według przepisu na opakowaniu. Ugotowany ryż wymieszaj z posiekanym koperkiem. Surówka – umyj warzywa, w naczyniu wymieszaj sałaty z pokrojonym ogórkiem, wymieszaj je z olejem rzepakowym i sokiem z cytryny."
+  },
+  {
+    "day": "Niedziela 04.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Świąteczna owsianka",
+    "kcal": "890",
+    "time": "15 min",
+    "ingredients": [
+      "płatki owsiane 7 łyżek (70 g)",
+      "mleko 2% tłuszczu 1 szklanka (250 ml)",
+      "orzechy włoskie 1 garść (30 g)",
+      "orzechy laskowe 1 garść (30 g)",
+      "żurawina 1 1/3 łyżeczki (20 g)",
+      "jabłko 3/4 sztuki (150 g)",
+      "pomarańcza, skórka 1/2 łyżeczki (5 g)",
+      "cynamon, w proszku 1 łyżeczka (2 g)"
+    ],
+    "instructions": "Do mleka wrzuć płatki owsiane. Gotuj kilka minut. Pod koniec gotowania dodaj orzechy i żurawinę. W tym czasie obierz jabłko ze skórki i podduś na patelni z cynamonem i skórką z pomarańczy. Owsiankę podawaj z jabłkiem."
+  },
+  {
+    "day": "Niedziela 04.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Serek wiejski z papryką i pomidorkami koktajlowymi",
+    "kcal": "295",
+    "time": "5 min",
+    "ingredients": [
+      "serek wiejski 1 małe opakowanie (150 g)",
+      "pomidorki koktajlowe 7 sztuk (140 g)",
+      "nasiona słonecznika 1/2 łyżki (5 g)",
+      "papryka czerwona 1/3 sztuki (70 g)",
+      "chleb żytni 1 kromka (35 g)"
+    ],
+    "instructions": "Do serka wiejskiego dodaj kawałki papryki oraz pomidorki koktajlowe. Posyp nasionami słonecznika, przypraw ulubionymi przyprawami według uznania i wymieszaj. Zjedz z pieczywem."
+  },
+  {
+    "day": "Niedziela 04.01.2026",
+    "meal_type": "Obiad",
+    "name": "Dorsz pod kołderką z cukinii",
+    "kcal": "1052",
+    "time": "40 min",
+    "ingredients": [
+      "czosnek 1 ząbek (5 g)",
+      "cukinia 1/2 sztuki (300 g)",
+      "pietruszka, natka 9 łyżeczek (40 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "dorsz świeży, filet bez skóry 3 porcje (300 g)",
+      "kasza jęczmienna perłowa, sucha 1/2 szklanki (90 g)",
+      "masło klarowane 1 1/2 łyżki (22 g)",
+      "migdały w płatkach 2 2/3 łyżki (40 g)"
+    ],
+    "instructions": "Rybę opłucz, osusz i skrop sokiem z cytryny. Cukinię zetrzyj na grubych oczkach, natkę posiekaj, czosnek wyciśnij. Cukinię wrzuć na rozgrzaną patelnię z masłem i podsmaż przez około 5 minut. Rybę ułóż w naczyniu żaroodpornym i połóż na wierzchu cukinię. Piecz przez około 25 minut w 180 stopniach. Podaj z kaszą i posyp płatkami migdałowymi."
+  },
+  {
+    "day": "Niedziela 04.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Jogurt z nektarynką i kokosem",
+    "kcal": "314",
+    "time": "5 min",
+    "ingredients": [
+      "jogurt naturalny 1 duże opakowanie (200 g)",
+      "nektarynka 1 sztuka (110 g)",
+      "wiórki kokosowe 1 łyżka (6 g)",
+      "orzechy włoskie 1 czubata łyżka (15 g)"
+    ],
+    "instructions": "Do jogurtu dodaj wiórki kokosowe, wymieszaj. Następnie dodaj kawałki nektarynki, posyp orzechami włoskimi."
+  },
+  {
+    "day": "Niedziela 04.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Pieczeń wieprzowa z płatkami owsianymi",
+    "kcal": "935",
+    "time": "50 min",
+    "ingredients": [
+      "ryż biały, suchy 1/2 szklanki (90 g)",
+      "groszek zielony, mrożony 5 łyżek (75 g)",
+      "roszponka 2 garście (50 g)",
+      "rukola 2 garście (50 g)",
+      "ogórek zielony 2/3 sztuki (100 g)",
+      "koperek, świeży lub suszony 2 łyżeczki (8 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "schab wieprzowy bez kości, surowy 1 porcja (120 g)",
+      "ciecierzyca, gotowana lub z puszki 3 1/2 łyżki (70 g)",
+      "pieprz czarny do smaku (1 g)",
+      "płatki owsiane 3 łyżki (30 g)",
+      "czosnek 1 ząbek (5 g)",
+      "papryka chili, w proszku do smaku (1 g)",
+      "bazylia, suszona do smaku (1 g)",
+      "olej rzepakowy 1 1/2 łyżki (15 ml)"
+    ],
+    "instructions": "Zmiksuj mięso, ciecierzycę, pieprz, chili, bazylię, płatki, czosnek na gładką masę. Wysmaruj brytfankę olejem i włóż do niej uzyskaną masę. Całość piecz w piekarniku przez ok. 20-25 minut w temperaturze 200 stopni. Ugotuj ryż według przepisu na opakowaniu. Ugotowany ryż wymieszaj z posiekanym koperkiem. Surówka – umyj warzywa, w naczyniu wymieszaj sałaty z pokrojonym ogórkiem, wymieszaj je z olejem rzepakowym i sokiem z cytryny."
+  },
+  {
+    "day": "Poniedziałek 05.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Omlet kokosowy",
+    "kcal": "906",
+    "time": "15 min",
+    "ingredients": [
+      "banan 1 1/2 sztuki (180 g)",
+      "karob, mączka z chleba świętojańskiego 2 1/2 łyżki (30 g)",
+      "mleczko kokosowe 5 łyżek (50 ml)",
+      "wiórki kokosowe 5 łyżek (30 g)",
+      "jaja kurze 3 sztuki (150 g)",
+      "olej rzepakowy 2 1/4 łyżki (22 ml)"
+    ],
+    "instructions": "Wszystkie składniki poza bananem dokładnie zblenduj. Usmaż omlet z obu stron. Podaj z pokrojonym bananem."
+  },
+  {
+    "day": "Poniedziałek 05.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Owocowe smoothie na napoju migdałowym",
+    "kcal": "305",
+    "time": "10 min",
+    "ingredients": [
+      "napój migdałowy 1 1/3 szklanki (300 ml)",
+      "mango 1/4 sztuki (80 g)",
+      "banan 2/3 sztuki (80 g)",
+      "truskawki świeże lub mrożone 1/3 szklanki (50 g)",
+      "migdały w płatkach 1 łyżka (10 g)"
+    ],
+    "instructions": "Mango i banan obierz ze skórki. Zblenduj z napojem migdałowym, truskawkami i płatkami migdałów."
+  },
+  {
+    "day": "Poniedziałek 05.01.2026",
+    "meal_type": "Obiad",
+    "name": "Risotto z warzywami i bobem",
+    "kcal": "988",
+    "time": "30 min",
+    "ingredients": [
+      "nasiona słonecznika 2 łyżki (20 g)",
+      "pieprz czarny do smaku (1 g)",
+      "czosnek 2 ząbki (10 g)",
+      "szczypiorek 4 łyżki (20 g)",
+      "ser parmezan 2 łyżki (16 g)",
+      "oliwa z oliwek 2 łyżki (20 ml)",
+      "papryka czerwona 2/3 sztuki (130 g)",
+      "cebula 1/2 sztuki (50 g)",
+      "papryka słodka, w proszku do smaku (2 g)",
+      "bób, świeży lub mrożony 2 garście (160 g)",
+      "ryż brązowy, suchy 1/2 szklanki (90 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "pomidorki koktajlowe 5 sztuk (100 g)"
+    ],
+    "instructions": "Do oliwy dodaj posiekany czosnek i przyprawy. Ugotuj bób. Obierz bób z łupinek. Ryż ugotuj. Cebulę, pomidorki i paprykę podsmaż na patelni i dodaj do ugotowanego ryżu. Całość wymieszaj. Ryż z warzywami podawaj z bobem, skrop sokiem z cytryny i posyp posiekanym szczypiorkiem."
+  },
+  {
+    "day": "Poniedziałek 05.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Jogurt skyr z gorzką czekoladą i wiśniami",
+    "kcal": "302",
+    "time": "10 min",
+    "ingredients": [
+      "czekolada gorzka 1 kostka (10 g)",
+      "jogurt naturalny - skyr 1 opakowanie (150 g)",
+      "migdały w płatkach 1 1/2 łyżki (15 g)",
+      "wiśnie świeże lub mrożone 2 garście (130 g)"
+    ],
+    "instructions": "Do miseczki przełóż jogurt skyr, dodaj startą czekoladę, wymieszaj. W rondelku z odrobiną wody podduś wiśnie, następnie dodaj je do miseczki. Posyp płatkami migdałów."
+  },
+  {
+    "day": "Poniedziałek 05.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Pieczeń wieprzowa z płatkami owsianymi",
+    "kcal": "935",
+    "time": "50 min",
+    "ingredients": [
+      "ryż biały, suchy 1/2 szklanki (90 g)",
+      "groszek zielony, mrożony 5 łyżek (75 g)",
+      "roszponka 2 garście (50 g)",
+      "rukola 2 garście (50 g)",
+      "ogórek zielony 2/3 sztuki (100 g)",
+      "koperek, świeży lub suszony 2 łyżeczki (8 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "schab wieprzowy bez kości, surowy 1 porcja (120 g)",
+      "ciecierzyca, gotowana lub z puszki 3 1/2 łyżki (70 g)",
+      "pieprz czarny do smaku (1 g)",
+      "płatki owsiane 3 łyżki (30 g)",
+      "czosnek 1 ząbek (5 g)",
+      "papryka chili, w proszku do smaku (1 g)",
+      "bazylia, suszona do smaku (1 g)",
+      "olej rzepakowy 1 1/2 łyżki (15 ml)"
+    ],
+    "instructions": "Zmiksuj mięso, ciecierzycę, pieprz, chili, bazylię, płatki, czosnek na gładką masę. Wysmaruj brytfankę olejem i włóż do niej uzyskaną masę. Całość piecz w piekarniku przez ok. 20-25 minut w temperaturze 200 stopni. Ugotuj ryż według przepisu na opakowaniu. Ugotowany ryż wymieszaj z posiekanym koperkiem. Surówka – umyj warzywa, w naczyniu wymieszaj sałaty z pokrojonym ogórkiem, wymieszaj je z olejem rzepakowym i sokiem z cytryny."
+  },
+  {
+    "day": "Wtorek 06.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Omlet kokosowy",
+    "kcal": "906",
+    "time": "15 min",
+    "ingredients": [
+      "banan 1 1/2 sztuki (180 g)",
+      "karob, mączka z chleba świętojańskiego 2 1/2 łyżki (30 g)",
+      "mleczko kokosowe 5 łyżek (50 ml)",
+      "wiórki kokosowe 5 łyżek (30 g)",
+      "jaja kurze 3 sztuki (150 g)",
+      "olej rzepakowy 2 1/4 łyżki (22 ml)"
+    ],
+    "instructions": "Wszystkie składniki poza bananem dokładnie zblenduj. Usmaż omlet z obu stron. Podaj z pokrojonym bananem."
+  },
+  {
+    "day": "Wtorek 06.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Owocowe smoothie na napoju migdałowym",
+    "kcal": "305",
+    "time": "10 min",
+    "ingredients": [
+      "napój migdałowy 1 1/3 szklanki (300 ml)",
+      "mango 1/4 sztuki (80 g)",
+      "banan 2/3 sztuki (80 g)",
+      "truskawki świeże lub mrożone 1/3 szklanki (50 g)",
+      "migdały w płatkach 1 łyżka (10 g)"
+    ],
+    "instructions": "Mango i banan obierz ze skórki. Zblenduj z napojem migdałowym, truskawkami i płatkami migdałów."
+  },
+  {
+    "day": "Wtorek 06.01.2026",
+    "meal_type": "Obiad",
+    "name": "Risotto z warzywami i bobem",
+    "kcal": "988",
+    "time": "30 min",
+    "ingredients": [
+      "nasiona słonecznika 2 łyżki (20 g)",
+      "pieprz czarny do smaku (1 g)",
+      "czosnek 2 ząbki (10 g)",
+      "szczypiorek 4 łyżki (20 g)",
+      "ser parmezan 2 łyżki (16 g)",
+      "oliwa z oliwek 2 łyżki (20 ml)",
+      "papryka czerwona 2/3 sztuki (130 g)",
+      "cebula 1/2 sztuki (50 g)",
+      "papryka słodka, w proszku do smaku (2 g)",
+      "bób, świeży lub mrożony 2 garście (160 g)",
+      "ryż brązowy, suchy 1/2 szklanki (90 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "pomidorki koktajlowe 5 sztuk (100 g)"
+    ],
+    "instructions": "Do oliwy dodaj posiekany czosnek i przyprawy. Ugotuj bób. Obierz bób z łupinek. Ryż ugotuj. Cebulę, pomidorki i paprykę podsmaż na patelni i dodaj do ugotowanego ryżu. Całość wymieszaj. Ryż z warzywami podawaj z bobem, skrop sokiem z cytryny i posyp posiekanym szczypiorkiem."
+  },
+  {
+    "day": "Wtorek 06.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Jogurt skyr z gorzką czekoladą i wiśniami",
+    "kcal": "302",
+    "time": "10 min",
+    "ingredients": [
+      "czekolada gorzka 1 kostka (10 g)",
+      "jogurt naturalny - skyr 1 opakowanie (150 g)",
+      "migdały w płatkach 1 1/2 łyżki (15 g)",
+      "wiśnie świeże lub mrożone 2 garście (130 g)"
+    ],
+    "instructions": "Do miseczki przełóż jogurt skyr, dodaj startą czekoladę, wymieszaj. W rondelku z odrobiną wody podduś wiśnie, następnie dodaj je do miseczki. Posyp płatkami migdałów."
+  },
+  {
+    "day": "Wtorek 06.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Pieczeń wieprzowa z płatkami owsianymi",
+    "kcal": "935",
+    "time": "50 min",
+    "ingredients": [
+      "ryż biały, suchy 1/2 szklanki (90 g)",
+      "groszek zielony, mrożony 5 łyżek (75 g)",
+      "roszponka 2 garście (50 g)",
+      "rukola 2 garście (50 g)",
+      "ogórek zielony 2/3 sztuki (100 g)",
+      "koperek, świeży lub suszony 2 łyżeczki (8 g)",
+      "sok z cytryny 3 1/3 łyżki (20 ml)",
+      "schab wieprzowy bez kości, surowy 1 porcja (120 g)",
+      "ciecierzyca, gotowana lub z puszki 3 1/2 łyżki (70 g)",
+      "pieprz czarny do smaku (1 g)",
+      "płatki owsiane 3 łyżki (30 g)",
+      "czosnek 1 ząbek (5 g)",
+      "papryka chili, w proszku do smaku (1 g)",
+      "bazylia, suszona do smaku (1 g)",
+      "olej rzepakowy 1 1/2 łyżki (15 ml)"
+    ],
+    "instructions": "Zmiksuj mięso, ciecierzycę, pieprz, chili, bazylię, płatki, czosnek na gładką masę. Wysmaruj brytfankę olejem i włóż do niej uzyskaną masę. Całość piecz w piekarniku przez ok. 20-25 minut w temperaturze 200 stopni. Ugotuj ryż według przepisu na opakowaniu. Ugotowany ryż wymieszaj z posiekanym koperkiem. Surówka – umyj warzywa, w naczyniu wymieszaj sałaty z pokrojonym ogórkiem, wymieszaj je z olejem rzepakowym i sokiem z cytryny."
+  },
+  {
+    "day": "Środa 07.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Omlet kokosowy z jogurtem",
+    "kcal": "837",
+    "time": "15 min",
+    "ingredients": [
+      "banan 1 1/2 sztuki (180 g)",
+      "mąka kokosowa 3 łyżki (35 g)",
+      "mleczko kokosowe 3 łyżki (30 ml)",
+      "wiórki kokosowe 3 łyżki (18 g)",
+      "olej rzepakowy 1 łyżka (10 ml)",
+      "jaja kurze 3 sztuki (150 g)",
+      "jogurt naturalny 9 łyżek (180 g)"
+    ],
+    "instructions": "Zmiksuj jajka z wiórkami kokosowymi, mąką i mleczkiem. Usmaż omlet z obu stron na rozgrzanej patelni z olejem. Podaj z pokrojonym bananem i jogurtem."
+  },
+  {
+    "day": "Środa 07.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Sałatka z cieciorką, suszonymi pomidorami i papryką",
+    "kcal": "491",
+    "time": "15 min",
+    "ingredients": [
+      "ciecierzyca, gotowana lub z puszki 3 1/2 łyżki (70 g)",
+      "chleb żytni 2 kromki (70 g)",
+      "papryka czerwona 1/3 sztuki (100 g)",
+      "pomidory suszone w oliwie 3 sztuki (21 g)",
+      "pomidorki koktajlowe 6 sztuk (120 g)",
+      "dynia, pestki 1 1/2 łyżki (15 g)",
+      "sałata 1/4 sztuki (60 g)"
+    ],
+    "instructions": "Ciecierzycę odsącz z zalewy i wymieszaj z sałatą. Dodaj pokrojone pomidory koktajlowe, suszone pomidory, pokrojoną paprykę i pestki dyni. Zjedz z pieczywem."
+  },
+  {
+    "day": "Środa 07.01.2026",
+    "meal_type": "Obiad",
+    "name": "Kurczak w zielonym curry z groszkiem, marchewką i daktylami",
+    "kcal": "1058",
+    "time": "45 min",
+    "ingredients": [
+      "czosnek 2/3 ząbka (3 g)",
+      "marchew 3 sztuki (140 g)",
+      "groszek zielony 2/3 szklanki (100 g)",
+      "imbir, korzeń 1 kawałek (5 g)",
+      "filet z piersi kurczaka, bez skóry 1 1/2 sztuki (300 g)",
+      "mleczko kokosowe 1/3 szklanki (100 ml)",
+      "olej rzepakowy 2 łyżki (20 ml)",
+      "papryka chili, w proszku do smaku (3 g)",
+      "curry, w proszku do smaku (1 g)",
+      "kolendra, w proszku do smaku (3 g)",
+      "sól do smaku (1 g)",
+      "pieprz czarny do smaku (1 g)",
+      "ryż brązowy, suchy 2/3 szklanki (100 g)",
+      "sok z limonki 1/2 łyżki (3 ml)"
+    ],
+    "instructions": "Wstaw wodę i ugotuj ryż zgodnie z opisem na opakowaniu. W tym czasie opłucz, osusz i pokrój w kostkę kurczaka. Zamarynuj kurczaka w czosnku, pieprzu, soli, chili, startym imbirze, soku z limonki. W woku rozgrzej olej i wrzuć kurczaka. Krótko przesmaż i zalej mleczkiem kokosowym, dodaj zielony groszek, marchew. Duś na małym ogniu przez około 8-10 minut. Podawaj ze świeżą kolendrą."
+  },
+  {
+    "day": "Środa 07.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Sałatka owocowa z jogurtem i wiórkami kokosowymi",
+    "kcal": "302",
+    "time": "10 min",
+    "ingredients": [
+      "mango 1/3 sztuki (100 g)",
+      "ananas 1 1/4 plastra (100 g)",
+      "jabłko 1/3 sztuki (80 g)",
+      "jogurt naturalny 6 łyżek (120 g)",
+      "wiórki kokosowe 1 łyżka (10 g)"
+    ],
+    "instructions": "Mango, ananasa i jabłko pokrój w kostkę i wymieszaj. Polej jogurtem naturalnym i posyp wiórkami kokosowymi."
+  },
+  {
+    "day": "Środa 07.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Sałatka z makaronem ryżowym i warzywami",
+    "kcal": "703",
+    "time": "20 min",
+    "ingredients": [
+      "makaron ryżowy 1 3/4 garści (75 g)",
+      "ogórek zielony 1 sztuka (170 g)",
+      "rzodkiewka 8 sztuk (120 g)",
+      "pomidor 1 sztuka (170 g)",
+      "oliwki marynowane 2 łyżki (40 g)",
+      "kiełki rzodkiewki 1 łyżka (8 g)",
+      "olej lniany 1 1/2 łyżki (15 ml)",
+      "pomidory suszone w oliwie 3 plastry (21 g)",
+      "kefir naturalny 1 szklanka (250 ml)"
+    ],
+    "instructions": "Makaron ryżowy połam na drobne kawałki i ugotuj, a następnie przestudź. Ogórka, rzodkiewkę, pomidora pokrój w kostkę. Wymieszaj z makaronem. Dodaj pokrojone suszone pomidory, oliwki, kiełki. Przypraw według uznania i polej olejem lnianym. Popij kefirem."
+  },
+  {
+    "day": "Czwartek 08.01.2026",
+    "meal_type": "Śniadanie",
+    "name": "Omlet kokosowy z jogurtem",
+    "kcal": "837",
+    "time": "15 min",
+    "ingredients": [
+      "banan 1 1/2 sztuki (180 g)",
+      "mąka kokosowa 3 łyżki (35 g)",
+      "mleczko kokosowe 3 łyżki (30 ml)",
+      "wiórki kokosowe 3 łyżki (18 g)",
+      "olej rzepakowy 1 łyżka (10 ml)",
+      "jaja kurze 3 sztuki (150 g)",
+      "jogurt naturalny 9 łyżek (180 g)"
+    ],
+    "instructions": "Zmiksuj jajka z wiórkami kokosowymi, mąką i mleczkiem. Usmaż omlet z obu stron na rozgrzanej patelni z olejem. Podaj z pokrojonym bananem i jogurtem."
+  },
+  {
+    "day": "Czwartek 08.01.2026",
+    "meal_type": "Drugie śniadanie",
+    "name": "Sałatka z cieciorką, suszonymi pomidorami i papryką",
+    "kcal": "491",
+    "time": "15 min",
+    "ingredients": [
+      "ciecierzyca, gotowana lub z puszki 3 1/2 łyżki (70 g)",
+      "chleb żytni 2 kromki (70 g)",
+      "papryka czerwona 1/3 sztuki (100 g)",
+      "pomidory suszone w oliwie 3 sztuki (21 g)",
+      "pomidorki koktajlowe 6 sztuk (120 g)",
+      "dynia, pestki 1 1/2 łyżki (15 g)",
+      "sałata 1/4 sztuki (60 g)"
+    ],
+    "instructions": "Ciecierzycę odsącz z zalewy i wymieszaj z sałatą. Dodaj pokrojone pomidory koktajlowe, suszone pomidory, pokrojoną paprykę i pestki dyni. Zjedz z pieczywem."
+  },
+  {
+    "day": "Czwartek 08.01.2026",
+    "meal_type": "Obiad",
+    "name": "Kurczak w zielonym curry z groszkiem, marchewką i daktylami",
+    "kcal": "1058",
+    "time": "45 min",
+    "ingredients": [
+      "czosnek 2/3 ząbka (3 g)",
+      "marchew 3 sztuki (140 g)",
+      "groszek zielony 2/3 szklanki (100 g)",
+      "imbir, korzeń 1 kawałek (5 g)",
+      "filet z piersi kurczaka, bez skóry 1 1/2 sztuki (300 g)",
+      "mleczko kokosowe 1/3 szklanki (100 ml)",
+      "olej rzepakowy 2 łyżki (20 ml)",
+      "papryka chili, w proszku do smaku (3 g)",
+      "curry, w proszku do smaku (1 g)",
+      "kolendra, w proszku do smaku (3 g)",
+      "sól do smaku (1 g)",
+      "pieprz czarny do smaku (1 g)",
+      "ryż brązowy, suchy 2/3 szklanki (100 g)",
+      "sok z limonki 1/2 łyżki (3 ml)"
+    ],
+    "instructions": "Wstaw wodę i ugotuj ryż zgodnie z opisem na opakowaniu. W tym czasie opłucz, osusz i pokrój w kostkę kurczaka. Zamarynuj kurczaka w czosnku, pieprzu, soli, chili, startym imbirze, soku z limonki. W woku rozgrzej olej i wrzuć kurczaka. Krótko przesmaż i zalej mleczkiem kokosowym, dodaj zielony groszek, marchew. Duś na małym ogniu przez około 8-10 minut. Podawaj ze świeżą kolendrą."
+  },
+  {
+    "day": "Czwartek 08.01.2026",
+    "meal_type": "Podwieczorek",
+    "name": "Sałatka owocowa z jogurtem i wiórkami kokosowymi",
+    "kcal": "302",
+    "time": "10 min",
+    "ingredients": [
+      "mango 1/3 sztuki (100 g)",
+      "ananas 1 1/4 plastra (100 g)",
+      "jabłko 1/3 sztuki (80 g)",
+      "jogurt naturalny 6 łyżek (120 g)",
+      "wiórki kokosowe 1 łyżka (10 g)"
+    ],
+    "instructions": "Mango, ananasa i jabłko pokrój w kostkę i wymieszaj. Polej jogurtem naturalnym i posyp wiórkami kokosowymi."
+  },
+  {
+    "day": "Czwartek 08.01.2026",
+    "meal_type": "Kolacja",
+    "name": "Sałatka z makaronem ryżowym i warzywami",
+    "kcal": "703",
+    "time": "20 min",
+    "ingredients": [
+      "makaron ryżowy 1 3/4 garści (75 g)",
+      "ogórek zielony 1 sztuka (170 g)",
+      "rzodkiewka 8 sztuk (120 g)",
+      "pomidor 1 sztuka (170 g)",
+      "oliwki marynowane 2 łyżki (40 g)",
+      "kiełki rzodkiewki 1 łyżka (8 g)",
+      "olej lniany 1 1/2 łyżki (15 ml)",
+      "pomidory suszone w oliwie 3 plastry (21 g)",
+      "kefir naturalny 1 szklanka (250 ml)"
+    ],
+    "instructions": "Makaron ryżowy połam na drobne kawałki i ugotuj, a następnie przestudź. Ogórka, rzodkiewkę, pomidora pokrój w kostkę. Wymieszaj z makaronem. Dodaj pokrojone suszone pomidory, oliwki, kiełki. Przypraw według uznania i polej olejem lnianym. Popij kefirem."
+  },
+  {
+    "name": "Pseudoszakszuka",
+    "meal_type": "Śniadanie",
+    "kcal": "400",
+    "time": "15 min",
+    "ingredients": [
+      "8 pomidorków koktajlowych (~120 g): ~20 kcal",
+      "1 mała cebula (~60 g): ~25 kcal",
+      "Masło klarowane ( ~5 g): ~45 kcal",
+      "3 średnie jajka: ~210 kcal (ok. 70 kcal/szt.)",
+      "2 wafelki ryżowe: ~70 kcal (ok. 35 kcal/szt.)"
+    ],
+    "instructions": "Pomidorki i cebule pokroic, smazyc chwile na patelni (na 8) do zmiekniecia cebuli, zmniejszyc ogien do 5, wbic 3 jaja i przykryc, po 5 minutach zwiekszyc ogien do 6, w razie potrzeby przewrocic jajka.",
+    "day": "Książka kucharska"
+  }
+]

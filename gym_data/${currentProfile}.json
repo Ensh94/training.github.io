@@ -1,0 +1,36 @@
+{
+  "name": "${currentProfile}",
+  "exercises": [
+    {
+      "id": "1767103228759",
+      "name": "smarowanie kanapki maslem",
+      "parameters": [
+        "reps",
+        "sets"
+      ],
+      "info": "kanapka plasko na blacie, noz w prawej rece",
+      "recommended_sets": 4,
+      "recommended_reps": 6
+    },
+    {
+      "id": "1767103254821",
+      "name": "smarowanie kanapki maslem",
+      "parameters": [
+        "sets"
+      ],
+      "info": "",
+      "recommended_sets": 3,
+      "recommended_reps": null
+    },
+    {
+      "id": "1767103361595",
+      "name": "dupa",
+      "parameters": [
+        "sets"
+      ],
+      "info": "aaa",
+      "recommended_sets": 3,
+      "recommended_reps": null
+    }
+  ]
+}
