@@ -4,10 +4,25 @@ import os
 import time
 from datetime import datetime
 import glob
+from models import db, ShoppingState, Recipe, GymUser, WorkoutProfile, Exercise, Workout, ShoppingBackup, Feedback, MealProfile
 
 app = Flask(__name__)
 
-# Plik do przechowywania stanu zakupów
+# Database configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///shopping_app.db')
+# Fix for Heroku/Render PostgreSQL URLs
+if app.config['SQLALCHEMY_DATABASE_URI'].startswith('postgres://'):
+    app.config['SQLALCHEMY_DATABASE_URI'] = app.config['SQLALCHEMY_DATABASE_URI'].replace('postgres://', 'postgresql://', 1)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# Initialize database
+db.init_app(app)
+
+# Create tables
+with app.app_context():
+    db.create_all()
+
+# Legacy file paths (for migration purposes)
 STATE_FILE = 'shopping_state.json'
 BACKUP_DIR = 'backups'
 
@@ -60,28 +75,30 @@ def load_shopping_list():
     return sorted_items
 
 def load_state():
-    """Wczytuje stan zaznaczonych przedmiotów"""
-    if os.path.exists(STATE_FILE):
-        with open(STATE_FILE, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return {}
+    """Wczytuje stan zaznaczonych przedmiotów z bazy danych"""
+    items = ShoppingState.query.all()
+    return {item.item_id: item.checked for item in items}
 
 def save_state(state):
-    """Zapisuje stan zaznaczonych przedmiotów"""
-    with open(STATE_FILE, 'w', encoding='utf-8') as f:
-        json.dump(state, f, ensure_ascii=False, indent=2)
+    """Zapisuje stan zaznaczonych przedmiotów do bazy danych"""
+    for item_id, checked in state.items():
+        item = ShoppingState.query.filter_by(item_id=item_id).first()
+        if item:
+            item.checked = checked
+            item.updated_at = datetime.utcnow()
+        else:
+            item = ShoppingState(item_id=item_id, checked=checked)
+            db.session.add(item)
+    db.session.commit()
 
 def load_przepisy():
-    """Wczytuje przepisy z pliku JSON"""
-    if os.path.exists('przepisy.json'):
-        with open('przepisy.json', 'r', encoding='utf-8') as f:
-            return json.load(f)
-    return []
+    """Wczytuje przepisy z bazy danych"""
+    recipes = Recipe.query.all()
+    return [r.to_dict() for r in recipes]
 
 def save_przepisy(przepisy):
-    """Zapisuje przepisy do pliku JSON"""
-    with open('przepisy.json', 'w', encoding='utf-8') as f:
-        json.dump(przepisy, f, ensure_ascii=False, indent=2)
+    """Zapisuje przepisy do bazy danych - nie używane, używamy add_recipe"""
+    pass  # Legacy function, kept for compatibility
 
 def get_current_meal_type():
     """Określa typ posiłku na podstawie aktualnej godziny"""
@@ -173,52 +190,42 @@ def get_all_meals():
     })
 
 def create_backup():
-    """Tworzy backup aktualnego stanu"""
-    if not os.path.exists(BACKUP_DIR):
-        os.makedirs(BACKUP_DIR)
-    
+    """Tworzy backup aktualnego stanu w bazie danych"""
     state = load_state()
     if not state:  # Nie tworzymy backupu pustego stanu
         return None
     
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    backup_file = os.path.join(BACKUP_DIR, f'backup_{timestamp}.json')
+    timestamp = datetime.now()
+    filename = f'backup_{timestamp.strftime("%Y%m%d_%H%M%S")}.json'
     
-    with open(backup_file, 'w', encoding='utf-8') as f:
-        json.dump({
-            'timestamp': timestamp,
-            'state': state,
-            'readable_date': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        }, f, ensure_ascii=False, indent=2)
+    backup = ShoppingBackup(
+        filename=filename,
+        timestamp=timestamp,
+        state_data=json.dumps(state, ensure_ascii=False),
+        items_count=len(state)
+    )
+    db.session.add(backup)
+    db.session.commit()
     
-    return backup_file
+    return filename
 
 def list_backups():
-    """Listuje wszystkie dostępne backupy"""
-    if not os.path.exists(BACKUP_DIR):
-        return []
-    
-    backups = []
-    for backup_file in sorted(glob.glob(os.path.join(BACKUP_DIR, 'backup_*.json')), reverse=True):
-        with open(backup_file, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            backups.append({
-                'filename': os.path.basename(backup_file),
-                'timestamp': data.get('readable_date', data.get('timestamp')),
-                'items_count': len(data.get('state', {}))
-            })
-    return backups
+    """Listuje wszystkie dostępne backupy z bazy danych"""
+    backups = ShoppingBackup.query.order_by(ShoppingBackup.timestamp.desc()).all()
+    return [b.to_dict() for b in backups]
 
 def restore_backup(filename):
     """Przywraca stan z backupu"""
-    backup_file = os.path.join(BACKUP_DIR, filename)
-    if not os.path.exists(backup_file):
+    backup = ShoppingBackup.query.filter_by(filename=filename).first()
+    if not backup:
         return False
     
-    with open(backup_file, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-        state = data.get('state', {})
+    state = json.loads(backup.state_data)
     
+    # Clear existing state
+    ShoppingState.query.delete()
+    
+    # Restore from backup
     save_state(state)
     return True
 
@@ -283,17 +290,22 @@ def add_recipe():
             if field not in new_recipe:
                 return jsonify({'success': False, 'error': f'Brak wymaganego pola: {field}'}), 400
         
-        # Wczytaj istniejące przepisy
-        przepisy = load_przepisy()
-        
-        # Dodaj nowy przepis
-        przepisy.append(new_recipe)
-        
-        # Zapisz do pliku
-        save_przepisy(przepisy)
+        # Utwórz nowy przepis w bazie danych
+        recipe = Recipe(
+            name=new_recipe['name'],
+            meal_type=new_recipe['meal_type'],
+            day=new_recipe.get('day'),
+            kcal=new_recipe['kcal'],
+            time=new_recipe['time'],
+            ingredients=json.dumps(new_recipe['ingredients'], ensure_ascii=False),
+            instructions=json.dumps(new_recipe['instructions'], ensure_ascii=False)
+        )
+        db.session.add(recipe)
+        db.session.commit()
         
         return jsonify({'success': True, 'message': 'Przepis został dodany'})
     except Exception as e:
+        db.session.rollback()
         return jsonify({'success': False, 'error': str(e)}), 500
 
 @app.route('/api/backups', methods=['GET'])
@@ -311,47 +323,46 @@ def restore_backup_endpoint(filename):
 # ===== GYM ENDPOINTS =====
 GYM_DATA_DIR = 'gym_data'
 
-def ensure_gym_dir():
-    """Tworzy katalog na dane gym jeśli nie istnieje"""
-    if not os.path.exists(GYM_DATA_DIR):
-        os.makedirs(GYM_DATA_DIR)
+# ===== GYM ENDPOINTS =====
+GYM_DATA_DIR = 'gym_data'  # Legacy, kept for reference
 
 @app.route('/api/gym/users', methods=['GET'])
 def get_gym_users():
-    """Zwraca listę użytkowników"""
-    ensure_gym_dir()
-    users_file = os.path.join(GYM_DATA_DIR, 'users.json')
-    
-    if not os.path.exists(users_file):
+    """Zwraca listę użytkowników z bazy danych"""
+    users = GymUser.query.all()
+    if not users:
         # Tworzymy domyślnych użytkowników
         default_users = ['Łysy', 'Gość']
-        with open(users_file, 'w', encoding='utf-8') as f:
-            json.dump(default_users, f, ensure_ascii=False, indent=2)
+        for username in default_users:
+            user = GymUser(username=username)
+            db.session.add(user)
+        db.session.commit()
         return jsonify(default_users)
     
-    with open(users_file, 'r', encoding='utf-8') as f:
-        return jsonify(json.load(f))
+    return jsonify([user.username for user in users])
 
 @app.route('/api/gym/users', methods=['POST'])
 def add_gym_user():
-    """Dodaje nowego użytkownika"""
-    ensure_gym_dir()
+    """Dodaje nowego użytkownika do bazy danych"""
     data = request.json
     username = data.get('username')
     
-    users_file = os.path.join(GYM_DATA_DIR, 'users.json')
-    users = []
+    if not username:
+        return jsonify({'success': False, 'error': 'Username required'})
     
-    if os.path.exists(users_file):
-        with open(users_file, 'r', encoding='utf-8') as f:
-            users = json.load(f)
+    # Check if user already exists
+    existing_user = GymUser.query.filter_by(username=username).first()
+    if existing_user:
+        users = GymUser.query.all()
+        return jsonify({'success': True, 'users': [u.username for u in users]})
     
-    if username not in users:
-        users.append(username)
-        with open(users_file, 'w', encoding='utf-8') as f:
-            json.dump(users, f, ensure_ascii=False, indent=2)
+    # Add new user
+    new_user = GymUser(username=username)
+    db.session.add(new_user)
+    db.session.commit()
     
-    return jsonify({'success': True, 'users': users})
+    users = GymUser.query.all()
+    return jsonify({'success': True, 'users': [u.username for u in users]})
 
 @app.route('/api/gym/<username>/profiles', methods=['GET'])
 def get_user_profiles(username):
@@ -1049,76 +1060,62 @@ def delete_profile_workout(profile, workout_id):
 
 FEEDBACK_DIR = 'feedbacks'
 
-def ensure_feedback_dir():
-    """Upewnia się, że katalog feedbacks istnieje"""
-    if not os.path.exists(FEEDBACK_DIR):
-        os.makedirs(FEEDBACK_DIR)
+FEEDBACK_DIR = 'feedbacks'  # Legacy, kept for reference
 
 @app.route('/api/feedback', methods=['POST'])
 def save_feedback():
-    """Zapisuje feedback użytkownika"""
-    ensure_feedback_dir()
+    """Zapisuje feedback użytkownika do bazy danych"""
     data = request.json
     feedback_text = data.get('feedback')
     
     if not feedback_text:
         return jsonify({'success': False, 'error': 'No feedback text'})
     
-    # Generuj nazwę pliku z timestampem
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    filename = f'feedback_{timestamp}.txt'
-    filepath = os.path.join(FEEDBACK_DIR, filename)
+    # Zapisz feedback do bazy danych
+    feedback = Feedback(text=feedback_text)
+    db.session.add(feedback)
+    db.session.commit()
     
-    # Zapisz feedback
-    with open(filepath, 'w', encoding='utf-8') as f:
-        f.write(f"Data: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-        f.write("="*50 + "\n\n")
-        f.write(feedback_text)
+    timestamp = feedback.created_at.strftime('%Y%m%d_%H%M%S')
+    filename = f'feedback_{timestamp}.txt'
     
     return jsonify({'success': True, 'filename': filename})
 
 @app.route('/api/profiles', methods=['GET'])
 def get_profiles():
-    """Pobiera listę profili"""
-    profiles_file = 'profiles.json'
+    """Pobiera listę profili z bazy danych"""
+    profiles = MealProfile.query.all()
     
-    if not os.path.exists(profiles_file):
-        # Domyślne profile
-        default_profiles = ['Gość']
-        with open(profiles_file, 'w', encoding='utf-8') as f:
-            json.dump(default_profiles, f, ensure_ascii=False, indent=2)
-        return jsonify(default_profiles)
+    if not profiles:
+        # Domyślny profil
+        default_profile = MealProfile(name='Gość')
+        db.session.add(default_profile)
+        db.session.commit()
+        return jsonify(['Gość'])
     
-    with open(profiles_file, 'r', encoding='utf-8') as f:
-        profiles = json.load(f)
-    
-    return jsonify(profiles)
+    return jsonify([p.name for p in profiles])
 
 @app.route('/api/profiles', methods=['POST'])
 def add_profile():
-    """Dodaje nowy profil"""
+    """Dodaje nowy profil do bazy danych"""
     data = request.json
     profile_name = data.get('profile_name', '').strip()
     
     if not profile_name:
         return jsonify({'success': False, 'message': 'Nazwa profilu jest wymagana'})
     
-    profiles_file = 'profiles.json'
-    profiles = []
-    
-    if os.path.exists(profiles_file):
-        with open(profiles_file, 'r', encoding='utf-8') as f:
-            profiles = json.load(f)
-    
-    if profile_name in profiles:
+    # Check if profile already exists
+    existing_profile = MealProfile.query.filter_by(name=profile_name).first()
+    if existing_profile:
         return jsonify({'success': False, 'message': 'Profil o tej nazwie już istnieje'})
     
-    profiles.append(profile_name)
+    # Add new profile
+    new_profile = MealProfile(name=profile_name)
+    db.session.add(new_profile)
+    db.session.commit()
     
-    with open(profiles_file, 'w', encoding='utf-8') as f:
-        json.dump(profiles, f, ensure_ascii=False, indent=2)
-    
-    return jsonify({'success': True, 'profiles': profiles})
+    profiles = MealProfile.query.all()
+    return jsonify({'success': True, 'profiles': [p.name for p in profiles]})
 
 if __name__ == '__main__':
     print("🛒 Lista zakupów uruchomiona na http://localhost:2137")
