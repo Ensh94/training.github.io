@@ -197,6 +197,46 @@
             color: white;
         }
 
+        .profile-selector-compact {
+            display: none;
+            width: 48px;
+            height: 48px;
+            margin: 0 auto;
+            border: none;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.18);
+            color: white;
+            font-size: 1.4em;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-selector-compact:hover {
+            background: rgba(255, 255, 255, 0.28);
+            transform: translateY(-2px);
+        }
+
+        .side-menu:not(.expanded) .profile-selector {
+            margin-top: auto;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-bottom: 12px;
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+        }
+
+        .side-menu:not(.expanded) .profile-selector-header,
+        .side-menu:not(.expanded) .profile-selector-name {
+            display: none;
+        }
+
+        .side-menu:not(.expanded) .profile-selector-compact {
+            display: flex;
+        }
+
         .profile-selector-header {
             font-size: 0.85em;
             opacity: 0.9;
@@ -2071,6 +2111,7 @@
         <div class="profile-selector" id="profile-selector" style="margin-top: auto;">
             <div class="profile-selector-header">👤 Profil</div>
             <div class="profile-selector-name" id="current-profile" onclick="showProfileModal()">Gość</div>
+            <button type="button" class="profile-selector-compact" onclick="showProfileModal()" aria-label="Wybierz profil">👤</button>
         </div>
     </div>
 
@@ -2821,8 +2862,19 @@
                 <input type="text" id="workout-profile-name" placeholder="np. Push, Pull, Legs, Kardio" style="padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1em; width: 100%;">
             </div>
             <div class="gym-form-group">
-                <label>Emoji</label>
-                <input type="text" id="workout-profile-icon" placeholder="🏋️" value="🏋️" style="padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1em; width: 100%;">
+                <label for="workout-profile-icon">Ikona</label>
+                <select id="workout-profile-icon" style="padding: 12px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1em; width: 100%; background: white;">
+                    <option value="🏋️">🏋️ Siłownia</option>
+                    <option value="🏃">🏃 Bieganie</option>
+                    <option value="🚴">🚴 Rower</option>
+                    <option value="🤸">🤸 Mobility</option>
+                    <option value="🧘">🧘 Joga</option>
+                    <option value="🥊">🥊 Boks</option>
+                    <option value="🏊">🏊 Pływanie</option>
+                    <option value="⚽">⚽ Piłka nożna</option>
+                    <option value="🎾">🎾 Tenis</option>
+                    <option value="💪">💪 Trening siłowy</option>
+                </select>
             </div>
             <div class="gym-form-buttons">
                 <button type="button" class="gym-btn-submit" onclick="submitWorkoutProfile()">➕ Dodaj</button>
@@ -3075,7 +3127,15 @@
         function showEditWorkoutProfileModal(profileId, currentName, currentIcon) {
             editingWorkoutProfileId = profileId;
             document.getElementById('workout-profile-name').value = currentName;
-            document.getElementById('workout-profile-icon').value = currentIcon;
+            const iconSelect = document.getElementById('workout-profile-icon');
+            const hasOption = Array.from(iconSelect.options).some(option => option.value === currentIcon);
+            if (!hasOption && currentIcon) {
+                const customOption = document.createElement('option');
+                customOption.value = currentIcon;
+                customOption.textContent = `${currentIcon} Własna`; 
+                iconSelect.appendChild(customOption);
+            }
+            iconSelect.value = currentIcon || '🏋️';
             document.querySelector('#workout-profile-modal .gym-modal-header').textContent = '✏️ Edytuj profil ćwiczeń';
             document.getElementById('workout-profile-modal').style.display = 'flex';
         }

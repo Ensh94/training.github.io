@@ -1,0 +1,22 @@
+{
+  "profiles": [
+    {
+      "id": "1784268944.0454838",
+      "name": "Szachy na bungee",
+      "icon": "🤸",
+      "exercises": [
+        {
+          "id": "1784268972.44682",
+          "name": "Kon na c4",
+          "info": "",
+          "recommended_sets": null,
+          "recommended_reps": null,
+          "parameters": [
+            "reps"
+          ],
+          "results": []
+        }
+      ]
+    }
+  ]
+}

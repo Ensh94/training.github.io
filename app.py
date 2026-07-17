@@ -9,7 +9,14 @@ from models import db, ShoppingState, Recipe, GymUser, WorkoutProfile, Exercise,
 app = Flask(__name__)
 
 # Database configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///shopping_app.db')
+# Use absolute path for SQLite in instance folder
+if os.environ.get('DATABASE_URL'):
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+else:
+    # Local development - use instance folder
+    db_path = os.path.join(os.path.dirname(__file__), 'instance', 'shopping_app.db')
+    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
+
 # Fix for Heroku/Render PostgreSQL URLs
 if app.config['SQLALCHEMY_DATABASE_URI'].startswith('postgres://'):
     app.config['SQLALCHEMY_DATABASE_URI'] = app.config['SQLALCHEMY_DATABASE_URI'].replace('postgres://', 'postgresql://', 1)
@@ -325,6 +332,11 @@ GYM_DATA_DIR = 'gym_data'
 
 # ===== GYM ENDPOINTS =====
 GYM_DATA_DIR = 'gym_data'  # Legacy, kept for reference
+
+def ensure_gym_dir():
+    """Tworzy katalog gym_data dla legacy endpointow opartych o pliki JSON."""
+    if not os.path.exists(GYM_DATA_DIR):
+        os.makedirs(GYM_DATA_DIR)
 
 @app.route('/api/gym/users', methods=['GET'])
 def get_gym_users():

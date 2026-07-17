@@ -1,0 +1,38 @@
+[
+  {
+    "profile_id": "Gość",
+    "profile_name": "Gość",
+    "start_time": "2026-07-17T06:16:20.355Z",
+    "exercises": [
+      {
+        "id": "1784268972.44682",
+        "info": "",
+        "name": "Kon na c4",
+        "parameters": [
+          "reps"
+        ],
+        "recommended_reps": null,
+        "recommended_sets": null,
+        "results": [],
+        "sets": [
+          {
+            "reps": 1
+          },
+          {
+            "reps": 1
+          },
+          {
+            "reps": 1
+          },
+          {
+            "reps": 1
+          }
+        ]
+      }
+    ],
+    "end_time": "2026-07-17T06:16:33.680Z",
+    "id": "1784268993644",
+    "user_profile": "Gość",
+    "workout_profile_id": "1784268944.0454838"
+  }
+]
